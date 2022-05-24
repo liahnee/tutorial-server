@@ -1,0 +1,22 @@
+// commonjs, every file is module (by default)
+//modules - encapsulated code
+const secret = 'SUPER SECRET';
+const john = 'john';
+const peter = 'peter';
+
+const sayHi = (name) => {
+  console.log(`Hello ${name}`);
+};
+
+// sayHi('susan');
+// sayHi(john);
+// sayHi(peter);
+
+module.exports = { john, peter, sayHi };
+
+module.exports.items = ['item1', 'item2'];
+const person = {
+  name: 'bob',
+};
+
+module.exports.singlePerson = person;
