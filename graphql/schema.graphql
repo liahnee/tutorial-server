@@ -1,0 +1,25 @@
+type Person {
+  name: String
+  family: Family
+}
+
+type Family {
+  name: String
+  houseLocation: City
+  members: [Person]
+}
+
+type City {
+  name: String
+  population: Number
+}
+
+type Query {
+  getPerson: [Person]
+  getFamily: [Family]
+  getCity: [City]
+}
+
+type Query {
+  greeting(name: String!): String
+}
