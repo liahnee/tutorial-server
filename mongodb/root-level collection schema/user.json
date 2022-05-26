@@ -1,0 +1,11 @@
+{
+  "type": "user",
+  "required": ["_id", "name"],
+  "properties": {
+    "_id": { "bsonType": "objectID" },
+    "name": {
+      "bsonType": "string"
+    },
+    "relationships": { "bsonType": "objectID" }
+  }
+}
